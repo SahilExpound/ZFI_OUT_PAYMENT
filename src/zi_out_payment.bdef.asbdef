@@ -1,0 +1,22 @@
+managed implementation in class zbp_i_out_payment unique;
+strict ( 2 );
+
+define behavior for zi_out_payment alias zi_out_payment_doc
+with unmanaged save
+//persistent table <???>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+ action ( features : instance ) ZPRINT result [1] $self;
+  update;
+
+  field ( readonly ) AccountingDocument;
+   mapping for ztb_out_payment
+    {
+      AccountingDocument = AccountingDocument;
+      CompanyCode = CompanyCode;
+      FiscalYear = FiscalYear;
+      base64          = base64;
+    }
+}

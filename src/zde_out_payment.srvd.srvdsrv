@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service Zde_out_payment {
+  expose ZC_OUT_PAYMENT;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Fi Out Payment"
+  },
+  "ui5AppDetails": {
+    "appId": "zfioutpayment"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FC1411876064D6DD46388FD23EA756B54A98945B_TM",
+    "semanticObject": "zfi_out_payment",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FC1411876064D6DD46388FD23EA756B54A98945B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Fi Out Payment"
+      }
+    }
+  ]
+}
